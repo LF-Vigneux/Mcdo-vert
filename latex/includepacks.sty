@@ -1,0 +1,42 @@
+% Packages typique pour un document
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{includepacks}[2025/07/09]
+
+% Package for physics, maths and others
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{bbold}
+
+% Setup the color of some actions
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=Rhodamine
+    }
+
+% Geometry of the paper
+\geometry{
+ a4paper,
+ total={150mm,257mm},
+ left=30mm,
+ top=20mm,
+ }
+
+% Bibliography package
+ \usepackage[
+    backend=biber,
+    style=ieee,
+    sorting=none
+]{biblatex}
+
+
+% Pseudocode for algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}

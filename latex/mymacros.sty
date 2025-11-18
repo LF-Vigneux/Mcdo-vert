@@ -1,0 +1,36 @@
+% Mes macros
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mymacros}[2025/07/09]
+
+
+% Commandes de dérivées
+\newcommand{\derive}[1]{\frac{\text{d}}{\text{d}#1}}
+
+% Commandes de commutateurs
+\newcommand{\ad}[1]{\text{ad}_{#1}}
+
+
+% Commandes de valeurs moyennes
+\newcommand{\mean}[1]{\langle #1 \rangle}
+\newcommand{\diagmeanvalue}[2]{\bra{#1}#2\ket{#1}}
+\newcommand{\meanvalue}[3]{\bra{#1}#2\ket{#3}}
+
+% Commandes de projecteurs
+\newcommand{\proj}[2]{\rvert #1\rangle\!\langle #2\rvert}
+\newcommand{\sameproj}[1]{\rvert #1\rangle\!\langle #1\rvert}
+
+% Symboles mathématiques
+\newcommand{\reels}{\mathbb{R}}
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\idd}{\mathbb{1}}
+\newcommand{\entier}{\mathbb{Z}}
+\newcommand{\bigo}{\mathcal{O}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\channel}[1]{\mathcal{#1}}
+
+\newcommand{\sforall}{\ \forall\ }
+\newcommand{\existe}{\ \exists \ }
+
+
+
+
