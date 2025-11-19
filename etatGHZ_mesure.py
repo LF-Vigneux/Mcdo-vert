@@ -45,17 +45,72 @@ for j, k in G.edges():
 
 # ### Modifier sous cette ligne
 # TODO, juste apliquer direct les angles de mesure
+"""
+Ligne 1
+"""
+# Qubit 0
 # Mesure le qubit 0 dans la base theta = 0
 circuit.compose(thetaGate(0), [0], inplace=True)
 circuit.measure(0, 0)
 
-# Mesure le qubit 1 dans la base theta1 = 0.1
-theta1 = 0.1
-circuit.rz(-2 * theta1, 1).c_if(circuit.clbits[0], 1)
-circuit.compose(thetaGate(theta1), [1], inplace=True)
+# Qubit 1
+circuit.compose(thetaGate(0), [1], inplace=True)
 circuit.measure(1, 1)
 
-# RAJOUTER LES PORTES X ET Z NÉCESSAIRE À LA FIN SELON RÉSULTAT DE MESURE
+# Qubit 2
+circuit.compose(thetaGate(0), [2], inplace=True)
+circuit.measure(2, 2)
+
+# Qubit 3
+### Correction dans l'ordre inverse
+circuit.x(3).c_if(circuit.clbits[2], 1)
+circuit.z(3).c_if(circuit.clbits[1], 1)
+circuit.x(3).c_if(circuit.clbits[0], 1)
+
+"""
+Ligne 2
+"""
+# Qubit 4
+circuit.compose(thetaGate(np.pi / 2), [4], inplace=True)
+circuit.measure(4, 4)
+
+# Qubit 5
+### Faire la rz avant pour qu'elle soit du bon côté du H.
+circuit.rz(-np.pi, 5).c_if(circuit.clbits[4], 1)
+circuit.compose(thetaGate(np.pi / 2), [5], inplace=True)
+circuit.measure(5, 5)
+
+# Qubit 6
+circuit.rz(-np.pi, 6).c_if(circuit.clbits[5], 1)
+circuit.compose(thetaGate(np.pi / 2), [6], inplace=True)
+circuit.measure(6, 6)
+
+# Qubit 7
+circuit.x(7).c_if(circuit.clbits[6], 1)
+circuit.z(7).c_if(circuit.clbits[5], 1)
+circuit.x(7).c_if(circuit.clbits[4], 1)
+
+"""
+Ligne 3
+"""
+# Qubit 8
+# Mesure le qubit 0 dans la base theta = 0
+circuit.compose(thetaGate(0), [8], inplace=True)
+circuit.measure(8, 8)
+
+# Qubit 9
+circuit.compose(thetaGate(0), [9], inplace=True)
+circuit.measure(9, 9)
+
+# Qubit 10
+circuit.compose(thetaGate(0), [10], inplace=True)
+circuit.measure(10, 10)
+
+# Qubit 11
+circuit.x(11).c_if(circuit.clbits[10], 1)
+circuit.z(11).c_if(circuit.clbits[9], 1)
+circuit.x(11).c_if(circuit.clbits[8], 1)
+
 
 print(circuit)
 # TODO
