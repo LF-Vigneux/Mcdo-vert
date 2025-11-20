@@ -12,7 +12,116 @@
 \newpage
 
 \section*{1.}
+On souhaite trouver les angles $\theta_0, \theta_1, \theta_2$ qui permettent de téléporter l'état du qubit 0 vers le qubit 3 tout en réalisant une porte Hadamard. 
+\\\\
+Les qubits sont dans un état graphe qui est tout simplement une chaîne, et le qubit 0 est initialement dans l'état $\ket{\psi_0}$.
+\\\\
+Utilisons la brique de base, soit un état graphe à deux qubits dont on mesure le premier qubit avec angle $\theta$.
+\\\\
+On considère le premier qubit dans un état $\ket{\psi}$. On sait déjà que cette brique de base va donner l'état suivant en sortie:
+
+\begin{equation}
+    \ket{\psi'} = X^mHR_z(-\theta)\ket{\psi} \label{base_brick}
+\end{equation}
+Dans notre cas, on utilise cette brique de base en chaîne afin de téléporter l'état du qubit 0 au qubit 3. 
+\\
+On commence par l'appliquer en mesurant le qubit 0 avec un angle $\theta_0$. Son état est donc téléporter vers le qubit 1 en suivant la formule \ref{base_brick} pour le nouvel état de ce qubit. On mesure ensuite le qubit 1, dont l'état est cette fois téléporté vers le qubit 2, qui a un état qui suit de nouveau la formule \ref{base_brick}. On mesure finalement le qubit 2, ce qui permet de téléporter l'état du qubit 2 vers le qubit 3, encore une fois en appliquant la formule \ref{base_brick}.
+\\\\
+Voici sous forme d'équation l'état obtenu du qubit 3 après ces 3 mesures. 
+
+\begin{align*}
+    \ket{\psi_3} = X^{m_2}HR_z(-\theta_2)\cdot X^{m_1}HR_z(-\theta_1)\cdot X^{m_0}HR_z(-\theta_0)\ket{\psi_0}    
+\end{align*}
+Prenons les 3 angles de mesure égales à zéro. Ceci nous permettra de faire la porte Hadamard.
+
+\begin{align*}
+    \implies \ket{\psi_3} &= X^{m_2}HR_z(0)\cdot X^{m_1}HR_z(0)\cdot X^{m_0}HR_z(0)\ket{\psi_0}
+    \\
+    &= X^{m_2}H\cdot X^{m_1}H\cdot X^{m_0}H\ket{\psi_0}
+    \intertext{Mettons maintenant toutes les corrections à gauche grâce aux identités $HX = ZH$ et $HZ = XH$.}
+    \\
+    &= X^{m_2}Z^{m_1}H Z^{m_0}H H\ket{\psi_0}
+    \\
+    &= X^{m_2}Z^{m_1}X^{m_0}H\ket{\psi_0}
+    \intertext{On suppose que les résultats de mesure sont tous zéro, ce qui simplifie grandement le résultat.}
+    &= H\ket{\psi_0}
+\end{align*}
+Ainsi, on obtient la porte hadamard qui a été téléporté avec l'état du qubit 0 sur le qubit 3. \ \ $\blacksquare$
+\\
+\textbf{ME SUIS RENDU COMPTE APRÈS QU'ON POUVAIT SUPPOSER LES RÉSULTATS DE MESURE NULS... RIP}
+
 \section*{2.}
+On prend le même état qu'en 1. et on souhaite maintenant réaliser la porte identité. On suppose que les résultats de mesure sont tous de zéro. 
+\\\\
+Reprenons le calcul avant de déterminer les angles de mesure pour l'état du qubit 3:
+
+\begin{align*}
+    \ket{\psi_3} &= X^{m_2}HR_z(-\theta_2)\cdot X^{m_1}HR_z(-\theta_1)\cdot X^{m_0}HR_z(-\theta_0)\ket{\psi_0}
+    \intertext{On suppose les mesures nulles.}
+    &= HR_z(-\theta_2)HR_z(-\theta_1)HR_z(-\theta_0)\ket{\psi_0}
+    \\
+    &= HR_z(-\theta_2)R_x(-\theta_1)R_z(-\theta_0)\ket{\psi_0}
+    \\
+    &= H\Big(\cos(-\theta_2) + i\sin(-\theta_2)Z\Big)\Big(\cos(-\theta_1) + i\sin(-\theta_1)X\Big)\Big(\cos(-\theta_0) + i\sin(-\theta_0)Z\Big)\ket{\psi_0}
+    \\
+    &= H\Big(\cos(-\theta_2)\cos(-\theta_1) + i\sin(-\theta_2)\cos(-\theta_1)Z + i\cos(-\theta_2)\sin(-\theta_1)X - \sin(-\theta_2)\sin(-\theta_1)ZX\Big)
+    \\
+    &\cdot\Big(\cos(-\theta_0) + i\sin(-\theta_0)Z\Big)\ket{\psi_0}
+    \\
+    &= H\Big(\cos(-\theta_2)\cos(-\theta_1)\cos(-\theta_0) + i\sin(-\theta_2)\cos(-\theta_1)\cos(-\theta_0)Z + i\cos(-\theta_2)\sin(-\theta_1)\cos(-\theta_0)X
+    \\
+    &- \sin(-\theta_2)\sin(-\theta_1)\cos(-\theta_0)ZX +i\cos(-\theta_2)\cos(-\theta_1)\sin(-\theta_0)Z - \sin(-\theta_2)\cos(-\theta_1)\sin(-\theta_0)
+    \\
+    &+ \cos(-\theta_2)\sin(-\theta_1)\sin(-\theta_0)XZ - i\sin(-\theta_2)\sin(-\theta_1)\sin(-\theta_0)ZXZ\Big)\ket{\psi_0}
+    \\
+    &= H\Bigg[\Big(\cos(-\theta_2)\cos(-\theta_1)\cos(-\theta_0) - \sin(-\theta_2)\cos(-\theta_1)\sin(-\theta_0)\Big)\idd
+    \\
+    &+ \Big(i\sin(-\theta_2)\cos(-\theta_1)\cos(-\theta_0) +i\cos(-\theta_2)\cos(-\theta_1)\sin(-\theta_0)\Big)Z
+    \\
+    &+ \Big(i\cos(-\theta_2)\sin(-\theta_1)\cos(-\theta_0) + i\sin(-\theta_2)\sin(-\theta_1)\sin(-\theta_0)\Big)X
+    \\
+    &- \Big(i\sin(-\theta_2)\sin(-\theta_1)\cos(-\theta_0) - i\cos(-\theta_2)\sin(-\theta_1)\sin(-\theta_0)\Big)Y \Bigg]\ket{\psi_0}
+\end{align*}
+On veut que tout le terme entre crochet donne H. On sait et on peut vérifier aisément sous forme matricielle que $H = 1/\sqrt{2}(X + Z)$. Ainsi, on doit choisir les angles de fonction à ce que les termes en identité et en Y soit nuls tandis que les termes en X et Z aient un coefficient $1/\sqrt{2}$.
+\\\\
+On pourrait alors développer le tout pour trouver ces angles en fonction des conditions énumérées ci-dessus. Cependant, il est assez simple de voir que les angles à choisir doivent tous être de $\pi/2$, car $\sin(\pi/4) = 1/\sqrt{2}$ et $\cos(\pi/4) = 1/\sqrt{2}$. 
+\\
+Voyons le résultat (tout en utilisant la parité des fonctions cos et sin):
+
+\begin{align*}
+    &= H\Bigg[\Big(\cos(\pi/4)\cos(\pi/4)\cos(\pi/4) - \sin(\pi/4)\cos(\pi/4)\sin(\pi/4)\Big)\idd
+    \\
+    &+ \Big(-i\sin(\pi/4)\cos(\pi/4)\cos(\pi/4) -i\cos(\pi/4)\cos(\pi/4)\sin(\pi/4)\Big)Z
+    \\
+    &+ \Big(-i\cos(\pi/4)\sin(\pi/4)\cos(\pi/4) - i\sin(\pi/4)\sin(\pi/4)\sin(\pi/4)\Big)X
+    \\
+    &- \Big(i\sin(\pi/4)\sin(\pi/4)\cos(\pi/4) - i\cos(\pi/4)\sin(\pi/4)\sin(\pi/4)\Big)Y \Bigg] \ket{\psi_0}
+    \\
+    &= H\Bigg[\Big((1/\sqrt{2})^3 - (1/\sqrt{2})^3\Big)\idd + \Big(-i(1/\sqrt{2})^3 -i(1/\sqrt{2})^3\Big)Z
+    \\
+    &+ \Big(-i(1/\sqrt{2})^3 - i(1/\sqrt{2})^3\Big)X - \Big(i(1/\sqrt{2})^3 - i(1/\sqrt{2})^3\Big)Y \Bigg] \ket{\psi_0}
+    \\
+    &= H\Bigg[\Big(0\Big)\idd + \Big(-2i(1/\sqrt{2})^3\Big)Z
+    \\
+    &+ \Big(-2i(1/\sqrt{2})^3\Big)X - \Big(0\Big)Y \Bigg]\ket{\psi_0} 
+    \\
+\end{align*}
+\begin{align*}
+    &= H\Bigg[\Big((1/\sqrt{2})^3 - (1/\sqrt{2})^3\Big)\idd + \Big(-i(1/\sqrt{2})^3 -i(1/\sqrt{2})^3\Big)Z
+    \\
+    &+ \Big(-i(1/\sqrt{2})^3 - i(1/\sqrt{2})^3\Big)X - \Big(i(1/\sqrt{2})^3 - i(1/\sqrt{2})^3\Big)Y \Bigg] \ket{\psi_0}
+    \\
+    &= H\Bigg(-2i(1/\sqrt{2})^3Z -2i(1/\sqrt{2})^3X \Bigg)\ket{\psi_0} 
+    \\
+    &= -iH\Big(1/\sqrt{2}Z + 1/\sqrt{2}\Big)\ket{\psi_0}
+    \\
+    &= -iHH\ket{\psi_0}
+    \\
+    &= -i\ket{\psi_0}
+\end{align*}
+Ainsi, on a obtenu une porte identité sur l'état initiale du qubit 0 pour l'état final du qubit 3. Cette porte est bonne à une phase globale près: $e^{-i\pi/2} = -i$. \ \ $\blacksquare$
+
+
 \section*{3.}
 \section*{4.}
 \section*{5.}
