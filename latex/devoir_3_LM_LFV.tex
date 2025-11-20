@@ -62,25 +62,25 @@ Reprenons le calcul avant de déterminer les angles de mesure pour l'état du qu
     \\
     &= HR_z(-\theta_2)R_x(-\theta_1)R_z(-\theta_0)\ket{\psi_0}
     \\
-    &= H\Big(\cos(-\theta_2) + i\sin(-\theta_2)Z\Big)\Big(\cos(-\theta_1) + i\sin(-\theta_1)X\Big)\Big(\cos(-\theta_0) + i\sin(-\theta_0)Z\Big)\ket{\psi_0}
+    &= H\Big(\cos(-\theta_2/2) + i\sin(-\theta_2/2)Z\Big)\Big(\cos(-\theta_1/2) + i\sin(-\theta_1/2)X\Big)\Big(\cos(-\theta_0/2) + i\sin(-\theta_0/2)Z\Big)\ket{\psi_0}
     \\
-    &= H\Big(\cos(-\theta_2)\cos(-\theta_1) + i\sin(-\theta_2)\cos(-\theta_1)Z + i\cos(-\theta_2)\sin(-\theta_1)X - \sin(-\theta_2)\sin(-\theta_1)ZX\Big)
+    &= H\Big(\cos(-\theta_2/2)\cos(-\theta_1/2) + i\sin(-\theta_2/2)\cos(-\theta_1/2)Z + i\cos(-\theta_2/2)\sin(-\theta_1/2)X - \sin(-\theta_2/2)\sin(-\theta_1/2)ZX\Big)
     \\
-    &\cdot\Big(\cos(-\theta_0) + i\sin(-\theta_0)Z\Big)\ket{\psi_0}
+    &\cdot\Big(\cos(-\theta_0/2) + i\sin(-\theta_0/2)Z\Big)\ket{\psi_0}
     \\
-    &= H\Big(\cos(-\theta_2)\cos(-\theta_1)\cos(-\theta_0) + i\sin(-\theta_2)\cos(-\theta_1)\cos(-\theta_0)Z + i\cos(-\theta_2)\sin(-\theta_1)\cos(-\theta_0)X
+    &= H\Big(\cos(-\theta_2/2)\cos(-\theta_1/2)\cos(-\theta_0/2) + i\sin(-\theta_2/2)\cos(-\theta_1/2)\cos(-\theta_0/2)Z + i\cos(-\theta_2/2)\sin(-\theta_1/2)\cos(-\theta_0/2)X
     \\
-    &- \sin(-\theta_2)\sin(-\theta_1)\cos(-\theta_0)ZX +i\cos(-\theta_2)\cos(-\theta_1)\sin(-\theta_0)Z - \sin(-\theta_2)\cos(-\theta_1)\sin(-\theta_0)
+    &- \sin(-\theta_2/2)\sin(-\theta_1/2)\cos(-\theta_0/2)ZX +i\cos(-\theta_2/2)\cos(-\theta_1/2)\sin(-\theta_0/2)Z - \sin(-\theta_2/2)\cos(-\theta_1/2)\sin(-\theta_0/2)
     \\
-    &+ \cos(-\theta_2)\sin(-\theta_1)\sin(-\theta_0)XZ - i\sin(-\theta_2)\sin(-\theta_1)\sin(-\theta_0)ZXZ\Big)\ket{\psi_0}
+    &+ \cos(-\theta_2/2)\sin(-\theta_1/2)\sin(-\theta_0/2)XZ - i\sin(-\theta_2/2)\sin(-\theta_1/2)\sin(-\theta_0/2)ZXZ\Big)\ket{\psi_0}
     \\
-    &= H\Bigg[\Big(\cos(-\theta_2)\cos(-\theta_1)\cos(-\theta_0) - \sin(-\theta_2)\cos(-\theta_1)\sin(-\theta_0)\Big)\idd
+    &= H\Bigg[\Big(\cos(-\theta_2/2)\cos(-\theta_1/2)\cos(-\theta_0/2) - \sin(-\theta_2/2)\cos(-\theta_1/2)\sin(-\theta_0/2)\Big)\idd
     \\
-    &+ \Big(i\sin(-\theta_2)\cos(-\theta_1)\cos(-\theta_0) +i\cos(-\theta_2)\cos(-\theta_1)\sin(-\theta_0)\Big)Z
+    &+ \Big(i\sin(-\theta_2/2)\cos(-\theta_1/2)\cos(-\theta_0/2) +i\cos(-\theta_2/2)\cos(-\theta_1/2)\sin(-\theta_0/2)\Big)Z
     \\
-    &+ \Big(i\cos(-\theta_2)\sin(-\theta_1)\cos(-\theta_0) + i\sin(-\theta_2)\sin(-\theta_1)\sin(-\theta_0)\Big)X
+    &+ \Big(i\cos(-\theta_2/2)\sin(-\theta_1/2)\cos(-\theta_0/2) + i\sin(-\theta_2/2)\sin(-\theta_1/2)\sin(-\theta_0/2)\Big)X
     \\
-    &- \Big(i\sin(-\theta_2)\sin(-\theta_1)\cos(-\theta_0) - i\cos(-\theta_2)\sin(-\theta_1)\sin(-\theta_0)\Big)Y \Bigg]\ket{\psi_0}
+    &- \Big(i\sin(-\theta_2/2)\sin(-\theta_1/2)\cos(-\theta_0/2) - i\cos(-\theta_2/2)\sin(-\theta_1/2/2)\sin(-\theta_0/2)\Big)Y \Bigg]\ket{\psi_0}
 \end{align*}
 On veut que tout le terme entre crochet donne H. On sait et on peut vérifier aisément sous forme matricielle que $H = 1/\sqrt{2}(X + Z)$. Ainsi, on doit choisir les angles de fonction à ce que les termes en identité et en Y soit nuls tandis que les termes en X et Z aient un coefficient $1/\sqrt{2}$.
 \\\\
