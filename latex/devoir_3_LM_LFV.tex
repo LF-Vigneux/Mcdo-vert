@@ -2,7 +2,7 @@
 \usepackage{includepacks}
 \usepackage{francais}
 \usepackage{mymacros}
-
+\usepackage{quantikz}
 \usepackage{quantikz}
 
 
@@ -125,8 +125,48 @@ Ainsi, on a obtenu une porte identité sur l'état initiale du qubit 0 pour l'é
 
 
 \section*{3.}
+
+
 \section*{4.}
+Avec les éléments des précédentes questions, il est simple de choisir les bases de mesure sur les différents qubits. On souhaite obtenir Hadamard sur l'état du qubit 3 dans le qubit 0. Même chose, on veut Hadamard sur l'état du qubit 11 dans le qubit 8. On a ensuite une Cz entre 0 et 4 et une autre Cz entre 8 et 4. Il suffit donc d'obtenir l'état du qubit 7 dans le qubit 4 en appliquant l'identité. 
+\\\\
+De cette façon, on implémente exactement le circuit montré plus haut. Voici donc les angles de mesure conformément aux questions 1 et 2:
+
+\begin{align*}
+    \theta_0 &= \theta_1 = \theta_2 = 0
+    \\
+    \theta_4 &= \theta_5 = \theta_6 = \pi/2
+    \\
+    \theta_8 &= \theta_9 = \theta_{10} = 0.
+\end{align*}
+
 \section*{5.}
 \section*{6.}
+On souhaite montrer que l'état GHZ est un état propre +1 des opérateurs ZZI, IZZ et XXX. Pour le montrer, il suffit d'appliquer ces opérateurs sur $\ket{GHZ}$.
+
+\begin{align*}
+    ZZI\ket{GHZ} &= 1/\sqrt{2}ZZI(\ket{000} + \ket{111})
+    \\
+    &= 1/\sqrt{2}(ZZI\ket{000} + ZZI\ket{111})
+    \\
+    &= 1/\sqrt{2}(\ket{000} + - - \ket{111})
+    \\
+    &= 1/\sqrt{2}(\ket{000} + \ket{111})
+    \\
+    &=+1 \ket{GHZ}\ \ \blacksquare
+    \\\\
+    1/\sqrt{2}IZZ(\ket{000} + \ket{111}) &=  1/\sqrt{2}(IZZ\ket{000} + IZZ\ket{111})
+    \\
+    &=1/\sqrt{2}(\ket{000} + \ket{111})
+    \\
+    &=+1 \ket{GHZ}\ \ \blacksquare
+    \\\\
+    1/\sqrt{2}XXX(\ket{000} + \ket{111}) &= 1/\sqrt{2}(XXX\ket{000} + XXX\ket{111})
+    \\
+    &= 1/\sqrt{2}(\ket{111} + \ket{000})
+    \\
+    &=+1 \ket{GHZ}\ \ \blacksquare
+\end{align*}
+
 \section*{7.}
 \end{document}
