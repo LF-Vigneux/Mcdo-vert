@@ -1,4 +1,4 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'devoir_3_LM_LFV.blg'
-[34] biber-darwin:340> INFO - === Sun Nov 23, 2025, 23:04:28
-[43] Biber.pm:419> INFO - Reading 'devoir_3_LM_LFV.bcf'
+[0] Config.pm:310> INFO - Logfile is '/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/Ãcole/UniversitÃ©/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.blg'
+[46] biber-darwin:340> INFO - === Mon Nov 24, 2025, 09:27:04
+[193] Biber.pm:419> INFO - Reading '/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.bcf'

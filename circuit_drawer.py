@@ -37,7 +37,7 @@ plt.clf()
 qr = QuantumRegister(3, name="|+>")
 qc_2 = QuantumCircuit(qr)
 
-qc_2.h(1)
+
 
 qc_2.cz(1,0)
 qc_2.h(0)
