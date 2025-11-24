@@ -86,7 +86,7 @@ Reprenons le calcul avant de déterminer les angles de mesure pour l'état du qu
 \end{align*}
 On veut que tout le terme entre crochet donne H. On sait et on peut vérifier aisément sous forme matricielle que $H = 1/\sqrt{2}(X + Z)$. Ainsi, on doit choisir les angles de fonction à ce que les termes en identité et en Y soit nuls tandis que les termes en X et Z aient un coefficient $1/\sqrt{2}$.
 \\\\
-On pourrait alors développer le tout pour trouver ces angles en fonction des conditions énumérées ci-dessus. Cependant, il est assez simple de voir que les angles à choisir doivent tous être de $\pi/2$, car $\sin(\pi/4) = 1/\sqrt{2}$ et $\cos(\pi/4) = 1/\sqrt{2}$. 
+On pourrait alors développer le tout pour trouver ces angles en fonction des conditions énumérées ci-dessus. Cependant, il est assez simple de voir que les angles à choisir doivent tous être de $-\pi/2$, car $\sin(\pi/4) = 1/\sqrt{2}$ et $\cos(\pi/4) = 1/\sqrt{2}$. 
 \\
 Voyons le résultat (tout en utilisant la parité des fonctions cos et sin):
 
@@ -138,22 +138,54 @@ On peut alors utiliser des identités de circuit pour avoir une forme utilisable
     \includegraphics[width=0.4\textwidth]{circuit_2.pdf}
     \includegraphics[width=0.4\textwidth]{circuit_2_+.pdf}
 \end{figure}
-
+\textbf{T'as un H de Trop}
 
 \section*{4.}
-Avec les éléments des précédentes questions, il est simple de choisir les bases de mesure sur les différents qubits. On commence avec les qubits 0, 4 et 8 qui forment déjà l'intrication depuis les états initiaux $\ket{+}$ voulus. On souhaite obtenir ensuite obtenir Hadamard sur l'état du qubit 0 dans le qubit 3. Même chose, on veut Hadamard sur l'état du qubit 8 dans le qubit 11. Il suffit finalement de conserver l'état du qubit 4 dans celui du qubit 7 en téléportant l'état tout en appliquant l'identité. 
+Avec les éléments des précédentes questions, il est simple de choisir les bases de mesure sur les différents qubits. On commence avec les qubits 0, 4 et 8 qui forment déjà l'intrication depuis les états initiaux $\ket{+}$ voulus. Ils sont représentés par les qubits 0, 1 et 2 sur le schéma où les CZ ont déjà été appliquées. On remaque en suite qu'une seule porte à 1 qubit est à appliquer sur chaque qubit. Ces portes sont des Hadamards et une identité qui peuvent être implémentées avec seulement trois qubits comme nous avons dans notre état grappe.
+
+On souhaite obtenir ensuite obtenir Hadamard sur l'état du qubit 0 dans le qubit 3. Même chose, on veut Hadamard sur l'état du qubit 8 dans le qubit 11. Il suffit finalement de conserver l'état du qubit 4 dans celui du qubit 7 en téléportant l'état tout en appliquant l'identité. 
 \\\\
 De cette façon, on implémente exactement le circuit montré plus haut. Voici donc les angles de mesure conformément aux questions 1 et 2:
 
 \begin{align*}
     \theta_0 &= \theta_1 = \theta_2 = 0
     \\
-    \theta_4 &= \theta_5 = \theta_6 = \pi/2
+    \theta_4 &= \theta_5 = \theta_6 = -\pi/2
     \\
     \theta_8 &= \theta_9 = \theta_{10} = 0.
 \end{align*}
 
 \section*{5.}
+Définissons $\ket{\psi_{final}}$ où nous appliquons une porte à 1 qubit arbitraire sans supposer les résultats de mesure nuls. 
+
+Réutilisons l'équation de départ du numéro 2.
+\begin{align*}
+    \ket{\psi_{final}}&= X^{m_2}HR_z(-\theta_2)\cdot X^{m_1}HR_z(-\theta_1)\cdot X^{m_0}HR_z(-\theta_0)\ket{\psi_0}\\
+    \intertext{Sachant que $R_z(\theta)\cdot X=X\cdot R_z(-\theta)$,}
+    &= X^{m_2}HX^{m_1}R_z(-\theta_2\cdot (-1)^{m_1})\cdot HX^{m_0}R_z(-\theta_1\cdot (-1)^{m_0})\cdot HR_z(-\theta_0)\ket{\psi_0}\\
+    \intertext{Puisque $HX=ZH$,}
+    &= X^{m_2}Z^{m_1}HR_z(-\theta_2\cdot (-1)^{m_1})\cdot Z^{m_0}HR_z(-\theta_1\cdot (-1)^{m_0})\cdot HR_z(-\theta_0)\ket{\psi_0}\\
+    \intertext{Puisque $Z$ et $R_z(\theta)$ commutent,}
+    &= X^{m_2}Z^{m_1}HZ^{m_0}R_z(-\theta_2\cdot (-1)^{m_1})\cdot HR_z(-\theta_1\cdot (-1)^{m_0})\cdot HR_z(-\theta_0)\ket{\psi_0}\\
+    &= X^{m_2}Z^{m_1}X^{m_0}H\bigg(R_z(-\theta_2\cdot (-1)^{m_1})\cdot HR_z(-\theta_1\cdot (-1)^{m_0})\cdot HR_z(-\theta_0)\ket{\psi_0}\bigg)\\
+\end{align*}
+
+On remarque ici la même forme entre parenthèse pour le cas $m_i=0$ pour définir les portes $H$ et $\idd$. Un seul facteur de corrections sur l'angle est ajouté. Dans un calcul basé sur la mesure, il est possible d'ajuster les bases de mesures selon des résultats antérieurs. Ainsi, définissons les nouveaux angles.
+\begin{itemize}
+    \item $H$
+    \begin{itemize}
+        \item $\theta_0=0$
+        \item $\theta_1=0\cdot (-1)^{m_0}=0$
+        \item $\theta_2=0\cdot (-1)^{m_1}=0$
+    \end{itemize}
+    \item $\idd$
+    \begin{itemize}
+        \item $\theta_0=-\frac{\pi}{2}$
+        \item $\theta_1=-\frac{\pi}{2}\cdot (-1)^{m_0}$
+        \item $\theta_2=-\frac{\pi}{2}\cdot (-1)^{m_1}$
+    \end{itemize}
+\end{itemize}
+
 \section*{6.}
 On souhaite montrer que l'état GHZ est un état propre +1 des opérateurs ZZI, IZZ et XXX. Pour le montrer, il suffit d'appliquer ces opérateurs sur $\ket{GHZ}$.
 
@@ -182,4 +214,13 @@ On souhaite montrer que l'état GHZ est un état propre +1 des opérateurs ZZI, 
 \end{align*}
 
 \section*{7.}
+Pour le code, il est possible d'ajuster les bases de mesure pour seulment utiliser des $R_Z$ comme portes conditonné sur des mesures sur pdes qubits mesurés.
+
+\textbf{MON TEXTE EST PAS CLAIR}
+\begin{flalign*}
+    &X^{m_2}Z^{m_1}X^{m_0}H\bigg(R_z(-\theta_2\cdot (-1)^{m_1})\cdot HR_z(-\theta_1\cdot (-1)^{m_0})\cdot HR_z(-\theta_0)\ket{\psi_0}\bigg)\\
+    &=X^{m_2}Z^{m_1}X^{m_0}H\bigg(R_z(-\theta_2)R_z^{m_1}(2\theta_2)\cdot HR_z(-\theta_1)R_z^{m_0}(2\theta_1)\cdot HR_z(-\theta_0)\ket{\psi_0}\bigg)
+\end{flalign*}
+
+En effet, on utilise le fait que deux $R_z$ consécutives peuvent être implémentées par un $R_z$ ayant comme angle de rotation la somme des deux autres portes.
 \end{document}

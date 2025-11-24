@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.22)  23 NOV 2025 21:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.26)  23 NOV 2025 23:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.tex
-(/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.tex
+**/Users/lf/Documents/GitHub/Mcdo-vert/latex/devoir_3_LM_LFV.tex
+(/Users/lf/Documents/GitHub/Mcdo-vert/latex/devoir_3_LM_LFV.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -22,7 +22,7 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/includepacks.sty
+) (./includepacks.sty
 Package: includepacks 2025/07/09
  (/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
@@ -548,7 +548,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip78
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/francais.sty
+) (./francais.sty
 Package: francais 2025/07/09
  (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2023/02/13 3.86 The Babel package
@@ -608,7 +608,7 @@ File: csquotes.cfg
 Package: frpseudocode 2020-08-10 French Pseudocode 0.3.0
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/mymacros.sty
+) (./mymacros.sty
 Package: mymacros 2025/07/09
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/quantikz/quantikz.sty
 Package: quantikz 2020/04/27 typeset quantum circuit diagrams
@@ -900,8 +900,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'french'.
-
-(/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.aux)
+ (./devoir_3_LM_LFV.aux)
 \openout1 = `devoir_3_LM_LFV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -976,7 +975,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 9.
-(/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.out) (/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.out)
+(./devoir_3_LM_LFV.out) (./devoir_3_LM_LFV.out)
 \@outlinefile=\write5
 \openout5 = `devoir_3_LM_LFV.out'.
 
@@ -992,12 +991,12 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'devoir_3_LM_LFV.bbl' found.
- (/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.bbl)
+ (./devoir_3_LM_LFV.bbl)
 Package biblatex Info: Reference section=0 on input line 9.
 Package biblatex Info: Reference segment=0 on input line 9.
 LaTeX Info: Redefining \degres on input line 9.
 LaTeX Info: Redefining \up on input line 9.
- (/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/title.tex [1
+ (./title.tex [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}])
 Underfull \hbox (badness 10000) in paragraph at lines 15--22
@@ -1057,11 +1056,11 @@ File: circuit_2_+.pdf Graphic file (type pdf)
 Package pdftex.def Info: circuit_2_+.pdf  used on input line 139.
 (pdftex.def)             Requested size: 170.71393pt x 101.82228pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
+Underfull \hbox (badness 10000) in paragraph at lines 146--149
 
  []
 
-[3 </Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/circuit_init.pdf> </Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/circuit_2.pdf> </Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/circuit_2_+.pdf>] [4] (/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.aux)
+[3 <./circuit_init.pdf> <./circuit_2.pdf> <./circuit_2_+.pdf>] [4] [5] (./devoir_3_LM_LFV.aux)
 Package rerunfilecheck Info: File `devoir_3_LM_LFV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'devoir_3_LM_LFV.run.xml'.
@@ -1069,18 +1068,18 @@ Package logreq Info: Writing requests to 'devoir_3_LM_LFV.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36068 strings out of 476025
- 702295 string characters out of 5790017
+ 36069 strings out of 476025
+ 699619 string characters out of 5790017
  1888388 words of memory out of 5000000
  55915 multiletter control sequences out of 15000+600000
  518315 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,12n,96p,1328b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,12n,96p,1248b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on /Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.pdf (5 pages, 176953 bytes).
+Output written on devoir_3_LM_LFV.pdf (6 pages, 183329 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
