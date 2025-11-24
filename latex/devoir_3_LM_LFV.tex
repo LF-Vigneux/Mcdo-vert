@@ -125,10 +125,23 @@ Ainsi, on a obtenu une porte identité sur l'état initiale du qubit 0 pour l'é
 
 
 \section*{3.}
+Voici le circuit qui implémente un état GHZ sur trois qubits:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{circuit_init.pdf}
+\end{figure}
+On peut alors utiliser des identités de circuit pour avoir une forme utilisable directement avec notre modèle de calcul:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{circuit_2.pdf}
+    \includegraphics[width=0.4\textwidth]{circuit_2_+.pdf}
+\end{figure}
 
 
 \section*{4.}
-Avec les éléments des précédentes questions, il est simple de choisir les bases de mesure sur les différents qubits. On souhaite obtenir Hadamard sur l'état du qubit 3 dans le qubit 0. Même chose, on veut Hadamard sur l'état du qubit 11 dans le qubit 8. On a ensuite une Cz entre 0 et 4 et une autre Cz entre 8 et 4. Il suffit donc d'obtenir l'état du qubit 7 dans le qubit 4 en appliquant l'identité. 
+Avec les éléments des précédentes questions, il est simple de choisir les bases de mesure sur les différents qubits. On commence avec les qubits 0, 4 et 8 qui forment déjà l'intrication depuis les états initiaux $\ket{+}$ voulus. On souhaite obtenir ensuite obtenir Hadamard sur l'état du qubit 0 dans le qubit 3. Même chose, on veut Hadamard sur l'état du qubit 8 dans le qubit 11. Il suffit finalement de conserver l'état du qubit 4 dans celui du qubit 7 en téléportant l'état tout en appliquant l'identité. 
 \\\\
 De cette façon, on implémente exactement le circuit montré plus haut. Voici donc les angles de mesure conformément aux questions 1 et 2:
 

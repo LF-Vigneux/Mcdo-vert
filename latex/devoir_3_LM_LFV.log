@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.22)  20 NOV 2025 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.22)  23 NOV 2025 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1041,11 +1041,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--92
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
+<circuit_init.pdf, id=39, 239.58261pt x 172.64862pt>
+File: circuit_init.pdf Graphic file (type pdf)
+<use circuit_init.pdf>
+Package pdftex.def Info: circuit_init.pdf  used on input line 132.
+(pdftex.def)             Requested size: 170.71393pt x 123.02132pt.
+<circuit_2.pdf, id=40, 286.11044pt x 172.64862pt>
+File: circuit_2.pdf Graphic file (type pdf)
+<use circuit_2.pdf>
+Package pdftex.def Info: circuit_2.pdf  used on input line 138.
+(pdftex.def)             Requested size: 170.71393pt x 103.01303pt.
+<circuit_2_+.pdf, id=41, 289.45464pt x 172.64862pt>
+File: circuit_2_+.pdf Graphic file (type pdf)
+<use circuit_2_+.pdf>
+Package pdftex.def Info: circuit_2_+.pdf  used on input line 139.
+(pdftex.def)             Requested size: 170.71393pt x 101.82228pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
-[3] [4] (/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.aux)
+[3 </Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/circuit_init.pdf> </Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/circuit_2.pdf> </Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/circuit_2_+.pdf>] [4] (/Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.aux)
 Package rerunfilecheck Info: File `devoir_3_LM_LFV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'devoir_3_LM_LFV.run.xml'.
@@ -1053,18 +1069,18 @@ Package logreq Info: Writing requests to 'devoir_3_LM_LFV.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36046 strings out of 476025
- 701812 string characters out of 5790017
+ 36068 strings out of 476025
+ 702295 string characters out of 5790017
  1888388 words of memory out of 5000000
- 55896 multiletter control sequences out of 15000+600000
+ 55915 multiletter control sequences out of 15000+600000
  518315 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,96p,1328b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on /Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.pdf (5 pages, 166297 bytes).
+Output written on /Users/ludo/Library/CloudStorage/OneDrive-Personnel/Documents/Ludovic/École/Université/Automne_25/PHQ598/Mcdo-vert/latex/devoir_3_LM_LFV.pdf (5 pages, 176953 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 153 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  13 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
