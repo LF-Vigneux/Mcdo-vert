@@ -71,18 +71,18 @@ circuit.x(3).c_if(circuit.clbits[0], 1)
 Ligne 2
 """
 # Qubit 4
-circuit.compose(thetaGate(np.pi / 2), [4], inplace=True)
+circuit.compose(thetaGate(-np.pi / 2), [4], inplace=True)
 circuit.measure(4, 4)
 
 # Qubit 5
 ### Faire la rz avant pour qu'elle soit du bon côté du H.
-circuit.rz(-np.pi, 5).c_if(circuit.clbits[4], 1)
-circuit.compose(thetaGate(np.pi / 2), [5], inplace=True)
+circuit.rz(np.pi, 5).c_if(circuit.clbits[4], 1)
+circuit.compose(thetaGate(-np.pi / 2), [5], inplace=True)
 circuit.measure(5, 5)
 
 # Qubit 6
-circuit.rz(-np.pi, 6).c_if(circuit.clbits[5], 1)
-circuit.compose(thetaGate(np.pi / 2), [6], inplace=True)
+circuit.rz(np.pi, 6).c_if(circuit.clbits[5], 1)
+circuit.compose(thetaGate(-np.pi / 2), [6], inplace=True)
 circuit.measure(6, 6)
 
 # Qubit 7
