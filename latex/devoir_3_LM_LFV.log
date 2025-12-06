@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.26)  1 DEC 2025 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.26)  6 DEC 2025 12:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1014,53 +1014,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--22
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--31
+Underfull \hbox (badness 10000) in paragraph at lines 24--30
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
-
- []
-
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 83.
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 42.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/bbold/Ubbold.fd)
-Overfull \hbox (35.07199pt too wide) detected at line 83
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+
  []
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 \end{align*}
+l.79 \end{align*}
                   [1]
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
+Underfull \hbox (badness 10000) in paragraph at lines 79--85
 
  []
 
-<circuit_init.pdf, id=33, 239.58261pt x 172.64862pt>
+<circuit_init.pdf, id=34, 239.58261pt x 172.64862pt>
 File: circuit_init.pdf Graphic file (type pdf)
 <use circuit_init.pdf>
-Package pdftex.def Info: circuit_init.pdf  used on input line 121.
+Package pdftex.def Info: circuit_init.pdf  used on input line 117.
 (pdftex.def)             Requested size: 170.71393pt x 123.02132pt.
 [2]
 <circuit_2.pdf, id=40, 286.11044pt x 172.64862pt>
 File: circuit_2.pdf Graphic file (type pdf)
 <use circuit_2.pdf>
-Package pdftex.def Info: circuit_2.pdf  used on input line 127.
+Package pdftex.def Info: circuit_2.pdf  used on input line 123.
 (pdftex.def)             Requested size: 170.71393pt x 103.01303pt.
 <circuit_2_+.pdf, id=41, 242.9268pt x 172.64862pt>
 File: circuit_2_+.pdf Graphic file (type pdf)
 <use circuit_2_+.pdf>
-Package pdftex.def Info: circuit_2_+.pdf  used on input line 128.
+Package pdftex.def Info: circuit_2_+.pdf  used on input line 124.
 (pdftex.def)             Requested size: 170.71393pt x 121.3274pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+Underfull \hbox (badness 10000) in paragraph at lines 133--136
 
  []
 
-[3 <./circuit_init.pdf> <./circuit_2.pdf> <./circuit_2_+.pdf>] [4] (./devoir_3_LM_LFV.aux)
+[3 <./circuit_init.pdf> <./circuit_2.pdf> <./circuit_2_+.pdf>] [4]
+<ghz_stabs.pdf, id=89, 462.52798pt x 346.89601pt>
+File: ghz_stabs.pdf Graphic file (type pdf)
+<use ghz_stabs.pdf>
+Package pdftex.def Info: ghz_stabs.pdf  used on input line 220.
+(pdftex.def)             Requested size: 384.10959pt x 288.09828pt.
+ [5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.224 \end{document}
+                     <./ghz_stabs.pdf>] (./devoir_3_LM_LFV.aux)
 Package rerunfilecheck Info: File `devoir_3_LM_LFV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'devoir_3_LM_LFV.run.xml'.
@@ -1068,18 +1074,18 @@ Package logreq Info: Writing requests to 'devoir_3_LM_LFV.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36068 strings out of 476025
- 699613 string characters out of 5790017
- 1888388 words of memory out of 5000000
- 55915 multiletter control sequences out of 15000+600000
- 518315 words of font info for 48 fonts, out of 8000000 for 9000
+ 36083 strings out of 476025
+ 699837 string characters out of 5790017
+ 1887388 words of memory out of 5000000
+ 55926 multiletter control sequences out of 15000+600000
+ 518988 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,96p,1248b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on devoir_3_LM_LFV.pdf (5 pages, 177657 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on devoir_3_LM_LFV.pdf (6 pages, 199476 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
+ 15 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
